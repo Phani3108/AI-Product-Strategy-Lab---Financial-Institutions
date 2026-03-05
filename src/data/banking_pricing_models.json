@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "version": "1.0",
+    "methodology": "Banking AI pricing structures derived from enterprise software pricing benchmarks and banking technology procurement patterns"
+  },
+  "pricingModels": {
+    "platform_license": {
+      "name": "Platform License",
+      "description": "Annual enterprise license for the core AI platform with tiered feature access",
+      "bestFor": ["compliance_intelligence_engine", "fraud_investigation_assistant"],
+      "structure": {
+        "type": "tiered_annual",
+        "tiers": [
+          { "name": "Foundation", "range": "$100K–$250K/year", "minValue": 100000, "maxValue": 250000, "includes": "Core AI models, standard integrations, 5 admin users" },
+          { "name": "Enterprise", "range": "$250K–$750K/year", "minValue": 250000, "maxValue": 750000, "includes": "Advanced models, custom integrations, SSO, dedicated support" },
+          { "name": "Premium", "range": "$750K–$2M/year", "minValue": 750000, "maxValue": 2000000, "includes": "Full platform, custom model training, SLA guarantees, on-premise option" }
+        ]
+      },
+      "advantages": ["Predictable budgeting", "Simpler procurement", "Comprehensive feature access"],
+      "risks": ["Shelfware risk if adoption is low", "Difficult to right-size initially", "Annual renewal negotiations"],
+      "bankSegmentMultipliers": {
+        "tier1_bank": 2.5,
+        "regional_bank": 1.0,
+        "digital_bank": 0.7,
+        "credit_union": 0.5
+      }
+    },
+    "usage_based": {
+      "name": "Usage-Based AI",
+      "description": "Pay-per-API-call or per-token pricing tied to actual AI consumption",
+      "bestFor": ["customer_support_copilot", "transaction_insights_ai"],
+      "structure": {
+        "type": "consumption",
+        "components": [
+          { "metric": "API calls", "range": "$0.002–$0.01 per call", "minRate": 0.002, "maxRate": 0.01 },
+          { "metric": "Token consumption", "range": "$0.01–$0.06 per 1K tokens", "minRate": 0.01, "maxRate": 0.06 },
+          { "metric": "Document pages", "range": "$0.05–$0.15 per page", "minRate": 0.05, "maxRate": 0.15 }
+        ],
+        "minimumCommitment": "$50K–$200K annual minimum"
+      },
+      "advantages": ["Aligned cost to value", "Low barrier to start", "Scales naturally with adoption"],
+      "risks": ["Unpredictable costs at scale", "Budget overrun potential", "Complex cost tracking"],
+      "bankSegmentMultipliers": {
+        "tier1_bank": 1.0,
+        "regional_bank": 1.0,
+        "digital_bank": 0.8,
+        "credit_union": 0.9
+      }
+    },
+    "seat_based": {
+      "name": "Seat-Based Copilot",
+      "description": "Per-user per-month pricing for AI copilot tools used by specific roles",
+      "bestFor": ["customer_support_copilot", "ai_underwriting_advisor"],
+      "structure": {
+        "type": "per_seat_monthly",
+        "tiers": [
+          { "name": "Agent Copilot", "range": "$50–$150/user/month", "minValue": 50, "maxValue": 150 },
+          { "name": "Analyst Copilot", "range": "$150–$400/user/month", "minValue": 150, "maxValue": 400 },
+          { "name": "Expert Copilot", "range": "$400–$1,000/user/month", "minValue": 400, "maxValue": 1000 }
+        ],
+        "volumeDiscounts": [
+          { "threshold": 100, "discount": "10%" },
+          { "threshold": 500, "discount": "20%" },
+          { "threshold": 1000, "discount": "30%" }
+        ]
+      },
+      "advantages": ["Simple per-user economics", "Easy ROI calculation per user", "Natural adoption tracking"],
+      "risks": ["Resistance to broad rollout costs", "Seat counting complexity", "Underutilized licenses"],
+      "bankSegmentMultipliers": {
+        "tier1_bank": 1.2,
+        "regional_bank": 1.0,
+        "digital_bank": 0.8,
+        "credit_union": 0.7
+      }
+    },
+    "revenue_share": {
+      "name": "Revenue Share",
+      "description": "Pricing tied to measurable business outcomes such as revenue lift or cost savings",
+      "bestFor": ["personal_financial_advisor_ai", "transaction_insights_ai"],
+      "structure": {
+        "type": "outcome_based",
+        "components": [
+          { "metric": "Revenue lift from cross-sell", "shareRange": "5–15%", "minShare": 0.05, "maxShare": 0.15 },
+          { "metric": "Cost savings from automation", "shareRange": "10–25%", "minShare": 0.10, "maxShare": 0.25 },
+          { "metric": "Fraud loss reduction", "shareRange": "8–20%", "minShare": 0.08, "maxShare": 0.20 }
+        ],
+        "minimumFee": "$75K–$150K base platform fee"
+      },
+      "advantages": ["Strong value alignment", "Reduced buyer risk", "Potential for high upside"],
+      "risks": ["Measurement disputes", "Complex attribution", "Revenue cap negotiations", "Longer contract cycles"],
+      "bankSegmentMultipliers": {
+        "tier1_bank": 1.5,
+        "regional_bank": 1.0,
+        "digital_bank": 0.6,
+        "credit_union": 0.4
+      }
+    },
+    "transaction_based": {
+      "name": "Transaction-Based",
+      "description": "Pricing based on the number of transactions processed or analyzed by the AI system",
+      "bestFor": ["fraud_investigation_assistant", "transaction_insights_ai"],
+      "structure": {
+        "type": "per_transaction",
+        "tiers": [
+          { "volume": "Up to 1M txns/month", "range": "$0.005–$0.02 per txn", "minRate": 0.005, "maxRate": 0.02 },
+          { "volume": "1M–10M txns/month", "range": "$0.002–$0.008 per txn", "minRate": 0.002, "maxRate": 0.008 },
+          { "volume": "10M+ txns/month", "range": "$0.001–$0.004 per txn", "minRate": 0.001, "maxRate": 0.004 }
+        ]
+      },
+      "advantages": ["Scales with bank's business volume", "Fair for low-volume institutions", "Clear unit economics"],
+      "risks": ["Revenue volatility from volume fluctuations", "Price compression at scale", "Competitor undercutting"],
+      "bankSegmentMultipliers": {
+        "tier1_bank": 0.6,
+        "regional_bank": 1.0,
+        "digital_bank": 1.2,
+        "credit_union": 1.5
+      }
+    }
+  },
+  "dealSizeEstimates": {
+    "tier1_bank": { "min": 500000, "max": 5000000, "typical": 1500000 },
+    "regional_bank": { "min": 150000, "max": 1000000, "typical": 400000 },
+    "digital_bank": { "min": 75000, "max": 500000, "typical": 200000 },
+    "credit_union": { "min": 50000, "max": 250000, "typical": 100000 }
+  }
+}

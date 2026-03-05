@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "version": "1.0",
+    "methodology": "Go-to-market frameworks for banking AI products based on enterprise sales patterns and financial services market dynamics"
+  },
+  "launchPhases": {
+    "phase1_design_partner": {
+      "name": "Design Partner Pilot",
+      "duration": "3–6 months",
+      "durationMonths": { "min": 3, "max": 6 },
+      "objective": "Validate product-market fit with 2–3 design partner institutions",
+      "activities": [
+        "Identify 2–3 target institutions with strong executive sponsorship",
+        "Co-develop solution with design partner input",
+        "Run controlled pilot with defined success metrics",
+        "Gather evidence for ROI claims and case studies",
+        "Refine product based on real-world feedback"
+      ],
+      "successCriteria": [
+        "At least 1 design partner willing to provide public reference",
+        "Measurable improvement on 2+ target KPIs",
+        "Product stability in production environment",
+        "Clear understanding of integration requirements"
+      ],
+      "risks": ["Design partner too accommodating (survivorship bias)", "Scope creep from partner requests", "Pilot success doesn't generalize"],
+      "investmentLevel": "low",
+      "revenueExpectation": "minimal"
+    },
+    "phase2_early_market": {
+      "name": "Early Market Expansion",
+      "duration": "6–12 months",
+      "durationMonths": { "min": 6, "max": 12 },
+      "objective": "Expand to 10–20 customers in target ICP with repeatable sales motion",
+      "activities": [
+        "Formalize ICP and qualification criteria",
+        "Build repeatable sales playbook",
+        "Develop partner channel strategy",
+        "Launch customer success program",
+        "Establish pricing and packaging for scale",
+        "Build competitive positioning assets"
+      ],
+      "successCriteria": [
+        "10+ paying customers",
+        "Repeatable sales cycle under 6 months",
+        "Positive unit economics per customer",
+        "At least 2 customers in each target segment",
+        "Net retention rate above 100%"
+      ],
+      "risks": ["Premature scaling before product-market fit", "Sales team hiring ahead of pipeline", "Channel conflict with existing vendors"],
+      "investmentLevel": "medium",
+      "revenueExpectation": "growing"
+    },
+    "phase3_scale": {
+      "name": "Scale & Platform Expansion",
+      "duration": "12–24 months",
+      "durationMonths": { "min": 12, "max": 24 },
+      "objective": "Achieve market leadership position with 50+ customers and platform expansion",
+      "activities": [
+        "Expand to adjacent use cases and personas",
+        "Build partner ecosystem for implementation",
+        "Launch self-service and PLG motions where applicable",
+        "Invest in thought leadership and analyst relations",
+        "Pursue strategic partnerships with core banking vendors",
+        "Explore international market entry"
+      ],
+      "successCriteria": [
+        "50+ active customers",
+        "ARR above $10M",
+        "Recognized in analyst reports (Gartner, Forrester)",
+        "Partner ecosystem generating 30%+ of pipeline",
+        "Multi-product adoption across customer base"
+      ],
+      "risks": ["Market commoditization", "Large vendor platform play", "Customer concentration risk", "International regulatory complexity"],
+      "investmentLevel": "high",
+      "revenueExpectation": "significant"
+    }
+  },
+  "icpFramework": {
+    "dimensions": [
+      {
+        "name": "Institution Size",
+        "options": [
+          { "id": "tier1_bank", "label": "Tier-1 Bank (>$100B assets)", "readiness": "high", "dealSize": "large", "saleCycle": "long" },
+          { "id": "regional_bank", "label": "Regional Bank ($10B–$100B)", "readiness": "medium", "dealSize": "medium", "saleCycle": "medium" },
+          { "id": "digital_bank", "label": "Digital Bank / Neobank", "readiness": "high", "dealSize": "small", "saleCycle": "short" },
+          { "id": "credit_union", "label": "Credit Union", "readiness": "low", "dealSize": "small", "saleCycle": "medium" }
+        ]
+      },
+      {
+        "name": "AI Maturity",
+        "options": [
+          { "id": "explorer", "label": "AI Explorer (early stage)", "readiness": "low" },
+          { "id": "experimenter", "label": "AI Experimenter (POCs running)", "readiness": "medium" },
+          { "id": "adopter", "label": "AI Adopter (production AI)", "readiness": "high" },
+          { "id": "leader", "label": "AI Leader (scaled AI)", "readiness": "very_high" }
+        ]
+      }
+    ]
+  },
+  "salesMotions": {
+    "enterprise_direct": {
+      "name": "Enterprise Direct Sales",
+      "description": "Dedicated account executives managing named accounts",
+      "bestFor": ["tier1_bank", "regional_bank"],
+      "typicalCycle": "4–9 months",
+      "resources": ["Account Executive", "Solutions Engineer", "Executive Sponsor"],
+      "winRate": "15–25%"
+    },
+    "partner_led": {
+      "name": "Partner-Led Sales",
+      "description": "System integrators and consulting firms driving opportunities",
+      "bestFor": ["tier1_bank", "regional_bank"],
+      "typicalCycle": "6–12 months",
+      "resources": ["Partner Manager", "Solutions Architect", "Partner Sales Rep"],
+      "winRate": "20–30%"
+    },
+    "product_led": {
+      "name": "Product-Led Growth",
+      "description": "Self-service trial and expansion through product usage",
+      "bestFor": ["digital_bank", "credit_union"],
+      "typicalCycle": "1–3 months",
+      "resources": ["Growth PM", "Developer Advocate", "Customer Success"],
+      "winRate": "5–10%"
+    }
+  },
+  "ecosystemPartners": {
+    "system_integrators": ["Accenture", "Deloitte", "EY", "KPMG", "PwC", "Infosys", "TCS", "Wipro"],
+    "core_banking_vendors": ["Temenos", "FIS", "Fiserv", "Jack Henry", "Thought Machine", "Mambu"],
+    "cloud_providers": ["Google Cloud", "AWS", "Microsoft Azure"],
+    "data_platforms": ["Snowflake", "Databricks", "Cloudera"],
+    "compliance_platforms": ["MetricStream", "Archer", "LogicGate", "Workiva"]
+  },
+  "differentiationAxes": [
+    { "id": "security", "label": "Security & Data Privacy", "description": "End-to-end encryption, data residency, SOC 2 / ISO 27001" },
+    { "id": "latency", "label": "Response Latency", "description": "Real-time inference performance under banking SLA requirements" },
+    { "id": "ai_capability", "label": "AI Capability Depth", "description": "Model accuracy, fine-tuning support, multi-modal capabilities" },
+    { "id": "data_integration", "label": "Data Integration", "description": "Native connectors to core banking, data warehouses, and third-party systems" },
+    { "id": "deployment_flexibility", "label": "Deployment Flexibility", "description": "Cloud, hybrid, on-premise, and air-gapped deployment options" },
+    { "id": "explainability", "label": "AI Explainability", "description": "Model interpretability, decision audit trails, and regulatory documentation" },
+    { "id": "compliance_readiness", "label": "Regulatory Compliance", "description": "Pre-built compliance frameworks, regulatory mappings, and audit support" },
+    { "id": "scalability", "label": "Scalability", "description": "Ability to handle banking-scale transaction volumes and concurrent users" }
+  ],
+  "adoptionFrictionFactors": [
+    { "id": "model_explainability", "label": "Model Explainability", "category": "technical", "defaultSeverity": "high" },
+    { "id": "data_residency", "label": "Data Residency Requirements", "category": "regulatory", "defaultSeverity": "high" },
+    { "id": "integration_complexity", "label": "Integration Complexity", "category": "technical", "defaultSeverity": "medium" },
+    { "id": "employee_resistance", "label": "Employee Resistance", "category": "organizational", "defaultSeverity": "medium" },
+    { "id": "budget_approval", "label": "Budget Approval Process", "category": "organizational", "defaultSeverity": "medium" },
+    { "id": "vendor_assessment", "label": "Vendor Risk Assessment", "category": "procurement", "defaultSeverity": "high" },
+    { "id": "model_validation", "label": "Model Validation (SR 11-7)", "category": "regulatory", "defaultSeverity": "critical" },
+    { "id": "change_management", "label": "Change Management", "category": "organizational", "defaultSeverity": "medium" },
+    { "id": "data_quality", "label": "Data Quality Readiness", "category": "technical", "defaultSeverity": "medium" },
+    { "id": "security_review", "label": "Security Architecture Review", "category": "technical", "defaultSeverity": "high" }
+  ]
+}

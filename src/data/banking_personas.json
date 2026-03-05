@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "version": "1.0",
+    "methodology": "Enterprise banking buyer personas derived from sales cycle analysis across 50+ financial institution AI deployments"
+  },
+  "personas": {
+    "chief_digital_officer": {
+      "title": "Chief Digital Officer",
+      "shortTitle": "CDO",
+      "seniority": "C-suite",
+      "department": "Digital Transformation",
+      "budgetAuthority": "high",
+      "kpis": [
+        "Digital channel adoption rate",
+        "Digital revenue as % of total",
+        "Customer digital engagement score",
+        "Time-to-market for digital products",
+        "Digital NPS"
+      ],
+      "painPoints": [
+        "Legacy systems block rapid AI deployment",
+        "Siloed data prevents unified customer intelligence",
+        "Competing priorities between modernization and innovation",
+        "Difficulty demonstrating AI ROI to the board",
+        "Talent gap in AI/ML engineering"
+      ],
+      "buyingTriggers": [
+        "Competitor launches AI-powered customer product",
+        "Board mandates digital transformation KPIs",
+        "Customer attrition to digital-native fintechs",
+        "Successful AI proof-of-concept demands scaling"
+      ],
+      "adoptionBlockers": [
+        "Integration complexity with core banking",
+        "Unclear regulatory guidance on AI use",
+        "Internal resistance from business line owners",
+        "Vendor lock-in concerns"
+      ],
+      "decisionCriteria": ["Speed to production", "Scalability", "Integration depth", "Vendor ecosystem"],
+      "typicalDealCycle": "4-8 months",
+      "influencedBy": ["Gartner reports", "Peer bank case studies", "Fintech partnerships"],
+      "avatar": "CDO"
+    },
+    "head_of_fraud": {
+      "title": "Head of Fraud Operations",
+      "shortTitle": "Fraud Lead",
+      "seniority": "VP/SVP",
+      "department": "Risk & Fraud",
+      "budgetAuthority": "medium",
+      "kpis": [
+        "Fraud loss rate",
+        "False positive rate",
+        "Investigation closure time",
+        "Detection-to-action latency",
+        "Analyst productivity ratio"
+      ],
+      "painPoints": [
+        "Alert volume growing faster than team capacity",
+        "False positive rates above 95% cause alert fatigue",
+        "Cross-channel fraud attacks evade siloed detection",
+        "Inability to adapt rules fast enough for new fraud patterns",
+        "Regulatory pressure for faster SAR filing"
+      ],
+      "buyingTriggers": [
+        "Major fraud loss event",
+        "Regulatory examination findings",
+        "Operational capacity ceiling reached",
+        "New fraud typology emerges"
+      ],
+      "adoptionBlockers": [
+        "Model explainability requirements",
+        "Data privacy constraints on training data",
+        "Integration with legacy case management",
+        "Fear of automating judgment-based decisions"
+      ],
+      "decisionCriteria": ["Detection accuracy", "Explainability", "Integration speed", "Regulatory compliance"],
+      "typicalDealCycle": "3-6 months",
+      "influencedBy": ["ACFE conferences", "Peer bank loss benchmarks", "Regulatory guidance"],
+      "avatar": "FRAUD"
+    },
+    "head_of_cx": {
+      "title": "Head of Customer Experience",
+      "shortTitle": "CX Lead",
+      "seniority": "VP/SVP",
+      "department": "Customer Experience",
+      "budgetAuthority": "medium",
+      "kpis": [
+        "Net Promoter Score",
+        "Customer Satisfaction (CSAT)",
+        "First Contact Resolution rate",
+        "Average Handle Time",
+        "Customer Effort Score"
+      ],
+      "painPoints": [
+        "Inconsistent experience across channels",
+        "High agent turnover and training costs",
+        "Long wait times during peak volumes",
+        "Limited personalization capabilities",
+        "Manual quality assurance processes"
+      ],
+      "buyingTriggers": [
+        "NPS decline below industry benchmark",
+        "Contact center cost overruns",
+        "Customer migration to competitor digital channels",
+        "Strategic initiative to reduce branch dependency"
+      ],
+      "adoptionBlockers": [
+        "Concern about AI replacing human empathy",
+        "Brand risk from AI-generated responses",
+        "Integration with existing CRM and telephony",
+        "Resistance from frontline staff"
+      ],
+      "decisionCriteria": ["Customer experience quality", "Agent augmentation vs. replacement", "Ease of training", "Brand safety"],
+      "typicalDealCycle": "3-6 months",
+      "influencedBy": ["Forrester CX research", "Customer complaint trends", "Digital banking benchmarks"],
+      "avatar": "CX"
+    },
+    "chief_risk_officer": {
+      "title": "Chief Risk Officer",
+      "shortTitle": "CRO",
+      "seniority": "C-suite",
+      "department": "Enterprise Risk Management",
+      "budgetAuthority": "high",
+      "kpis": [
+        "Risk-adjusted return on capital",
+        "Operational loss ratio",
+        "Model risk management compliance",
+        "Regulatory exam findings",
+        "Enterprise risk score"
+      ],
+      "painPoints": [
+        "Expanding risk surface from digital transformation",
+        "AI/ML model governance gaps",
+        "Difficulty quantifying AI-related operational risk",
+        "Cross-functional risk aggregation challenges",
+        "Increasing regulatory scrutiny of AI decisions"
+      ],
+      "buyingTriggers": [
+        "Regulatory guidance on AI model governance (SR 11-7)",
+        "Board risk appetite statement update",
+        "Material operational loss event",
+        "Peer bank regulatory enforcement action"
+      ],
+      "adoptionBlockers": [
+        "Model validation requirements (SR 11-7)",
+        "Data governance maturity gaps",
+        "Third-party risk from AI vendors",
+        "Lack of AI-literate risk professionals"
+      ],
+      "decisionCriteria": ["Regulatory compliance", "Audit trail", "Model governance", "Vendor risk profile"],
+      "typicalDealCycle": "6-12 months",
+      "influencedBy": ["OCC/Fed guidance", "Risk management conferences", "Model validation teams"],
+      "avatar": "CRO"
+    },
+    "head_of_compliance": {
+      "title": "Head of Compliance",
+      "shortTitle": "CCO",
+      "seniority": "SVP/EVP",
+      "department": "Compliance",
+      "budgetAuthority": "medium",
+      "kpis": [
+        "Regulatory exam readiness score",
+        "Compliance incident count",
+        "Policy coverage ratio",
+        "Regulatory change response time",
+        "Training completion rates"
+      ],
+      "painPoints": [
+        "Regulatory change volume overwhelming manual processes",
+        "Fragmented compliance tools and data",
+        "Audit evidence gathering is labor-intensive",
+        "Cross-border regulatory complexity",
+        "Difficulty mapping AI use to existing compliance frameworks"
+      ],
+      "buyingTriggers": [
+        "Consent order or MRA from regulator",
+        "New regulation with AI-specific requirements",
+        "Compliance team capacity at breaking point",
+        "Enterprise AI governance initiative"
+      ],
+      "adoptionBlockers": [
+        "Skepticism about AI accuracy for compliance",
+        "Lack of precedent for AI-assisted compliance decisions",
+        "Data quality concerns for regulatory reporting",
+        "Budget competition with mandatory compliance programs"
+      ],
+      "decisionCriteria": ["Accuracy and reliability", "Regulatory acceptance", "Audit trail completeness", "Integration with GRC"],
+      "typicalDealCycle": "4-8 months",
+      "influencedBy": ["Regulatory bulletins", "Industry compliance forums", "Legal counsel"],
+      "avatar": "CCO"
+    },
+    "contact_center_director": {
+      "title": "Contact Center Director",
+      "shortTitle": "CC Director",
+      "seniority": "Director/VP",
+      "department": "Operations",
+      "budgetAuthority": "low",
+      "kpis": [
+        "Cost per contact",
+        "Service level (% answered within threshold)",
+        "Agent utilization rate",
+        "Average Speed of Answer",
+        "Quality assurance score"
+      ],
+      "painPoints": [
+        "Staffing challenges and high attrition",
+        "Training new agents takes 6-8 weeks",
+        "Peak volume spikes exceed capacity",
+        "Quality consistency across shifts and locations",
+        "Pressure to reduce costs while improving service"
+      ],
+      "buyingTriggers": [
+        "Budget cut mandating efficiency gains",
+        "Seasonal volume spikes exceeding staffing models",
+        "New product launch requiring rapid agent enablement",
+        "Technology refresh cycle for contact center platform"
+      ],
+      "adoptionBlockers": [
+        "Agent union concerns about job displacement",
+        "Integration with existing CCaaS platform",
+        "Accuracy concerns for financial queries",
+        "Change management complexity"
+      ],
+      "decisionCriteria": ["Ease of deployment", "Agent acceptance", "Measurable efficiency gains", "Low disruption"],
+      "typicalDealCycle": "2-4 months",
+      "influencedBy": ["CCaaS vendor recommendations", "Industry benchmarks", "Peer operations leaders"],
+      "avatar": "CC"
+    }
+  }
+}

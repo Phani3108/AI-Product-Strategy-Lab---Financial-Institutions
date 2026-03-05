@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "version": "1.0",
+    "methodology": "Banking AI product archetypes derived from enterprise deployment patterns across tier-1 and regional institutions"
+  },
+  "products": {
+    "customer_support_copilot": {
+      "name": "Customer Support Copilot",
+      "category": "customer_experience",
+      "description": "AI-powered assistant that augments contact center agents with real-time response suggestions, sentiment analysis, and automated resolution for common banking inquiries.",
+      "targetPersonas": ["head_of_cx", "contact_center_director"],
+      "problemStatements": [
+        "Average handle time exceeds 8 minutes for routine inquiries",
+        "Agent turnover rate above 35% drives constant retraining costs",
+        "Inconsistent response quality across agent tiers",
+        "Customers expect 24/7 instant resolution for digital channels"
+      ],
+      "valueDrivers": [
+        { "metric": "Average Handle Time", "improvement": "-40%", "timeframe": "6 months" },
+        { "metric": "First Contact Resolution", "improvement": "+25%", "timeframe": "3 months" },
+        { "metric": "Agent Onboarding Time", "improvement": "-60%", "timeframe": "Immediate" },
+        { "metric": "CSAT Score", "improvement": "+15 pts", "timeframe": "6 months" }
+      ],
+      "deploymentPatterns": ["cloud_hosted", "hybrid_on_prem"],
+      "aiCapabilities": ["RAG", "Sentiment Analysis", "Intent Classification", "Response Generation", "Knowledge Base Search"],
+      "riskFactors": [
+        { "risk": "Hallucinated financial advice", "severity": "critical", "mitigation": "Human-in-the-loop for financial product recommendations" },
+        { "risk": "PII exposure in AI responses", "severity": "high", "mitigation": "PII detection and masking layer" },
+        { "risk": "Regulatory non-compliance in responses", "severity": "critical", "mitigation": "Compliance ruleset validation before delivery" }
+      ],
+      "integrationRequirements": ["CRM", "Core Banking", "Knowledge Management", "Telephony/CCaaS"],
+      "typicalTimeline": { "pilot": 3, "rollout": 6, "scale": 12 },
+      "competitiveIntensity": "high",
+      "marketMaturity": "growth"
+    },
+    "fraud_investigation_assistant": {
+      "name": "Fraud Investigation Assistant",
+      "category": "risk_management",
+      "description": "AI system that accelerates fraud investigation workflows by automatically correlating transaction patterns, flagging anomalies, and generating investigation summaries for analysts.",
+      "targetPersonas": ["head_of_fraud", "chief_risk_officer"],
+      "problemStatements": [
+        "False positive rates above 95% overwhelm investigation teams",
+        "Average investigation closure time exceeds 72 hours",
+        "Growing transaction volumes outpace analyst hiring capacity",
+        "Cross-channel fraud patterns are difficult to detect manually"
+      ],
+      "valueDrivers": [
+        { "metric": "False Positive Rate", "improvement": "-60%", "timeframe": "3 months" },
+        { "metric": "Investigation Closure Time", "improvement": "-50%", "timeframe": "6 months" },
+        { "metric": "Fraud Detection Rate", "improvement": "+30%", "timeframe": "6 months" },
+        { "metric": "Analyst Capacity", "improvement": "+3x", "timeframe": "3 months" }
+      ],
+      "deploymentPatterns": ["private_cloud", "hybrid_on_prem"],
+      "aiCapabilities": ["Anomaly Detection", "Graph Neural Networks", "NLP Summarization", "Pattern Correlation", "Risk Scoring"],
+      "riskFactors": [
+        { "risk": "Model bias against protected demographics", "severity": "critical", "mitigation": "Bias auditing and fairness constraints" },
+        { "risk": "Adversarial attack on detection models", "severity": "high", "mitigation": "Model hardening and adversarial training" },
+        { "risk": "Data residency violations", "severity": "critical", "mitigation": "Regional data processing enforcement" }
+      ],
+      "integrationRequirements": ["Transaction Processing", "Case Management", "Identity Verification", "Sanctions Screening"],
+      "typicalTimeline": { "pilot": 4, "rollout": 9, "scale": 18 },
+      "competitiveIntensity": "medium",
+      "marketMaturity": "early_growth"
+    },
+    "ai_underwriting_advisor": {
+      "name": "AI Underwriting Advisor",
+      "category": "lending",
+      "description": "Intelligent underwriting assistant that analyzes applicant data, market conditions, and risk factors to provide underwriters with data-driven recommendations and automated decisioning for standard cases.",
+      "targetPersonas": ["chief_risk_officer", "chief_digital_officer"],
+      "problemStatements": [
+        "Manual underwriting takes 5-10 business days for commercial loans",
+        "Inconsistent risk assessment across underwriting teams",
+        "Limited ability to incorporate alternative data sources",
+        "High operational cost per underwriting decision"
+      ],
+      "valueDrivers": [
+        { "metric": "Underwriting Decision Time", "improvement": "-70%", "timeframe": "6 months" },
+        { "metric": "Default Rate", "improvement": "-15%", "timeframe": "12 months" },
+        { "metric": "Throughput per Underwriter", "improvement": "+2.5x", "timeframe": "6 months" },
+        { "metric": "Cost per Decision", "improvement": "-55%", "timeframe": "9 months" }
+      ],
+      "deploymentPatterns": ["private_cloud", "on_premise"],
+      "aiCapabilities": ["Credit Risk Modeling", "Document Extraction", "Financial Statement Analysis", "Market Data Integration", "Explainable AI"],
+      "riskFactors": [
+        { "risk": "Fair lending violations", "severity": "critical", "mitigation": "Disparate impact testing and model interpretability" },
+        { "risk": "Model degradation from market shifts", "severity": "high", "mitigation": "Continuous model monitoring and retraining pipelines" },
+        { "risk": "Regulatory scrutiny of automated decisions", "severity": "critical", "mitigation": "Full audit trail and explainability framework" }
+      ],
+      "integrationRequirements": ["Loan Origination System", "Credit Bureau APIs", "Document Management", "Core Banking"],
+      "typicalTimeline": { "pilot": 6, "rollout": 12, "scale": 24 },
+      "competitiveIntensity": "medium",
+      "marketMaturity": "early"
+    },
+    "compliance_intelligence_engine": {
+      "name": "Compliance Intelligence Engine",
+      "category": "compliance",
+      "description": "AI-powered regulatory intelligence platform that monitors regulatory changes, maps obligations to internal controls, and automates compliance reporting and gap analysis.",
+      "targetPersonas": ["head_of_compliance", "chief_risk_officer"],
+      "problemStatements": [
+        "Regulatory change volume increased 300% over five years",
+        "Manual compliance mapping takes weeks per regulation update",
+        "Fragmented compliance tools create reporting inconsistencies",
+        "Audit preparation requires months of manual evidence gathering"
+      ],
+      "valueDrivers": [
+        { "metric": "Regulatory Change Processing", "improvement": "-80%", "timeframe": "3 months" },
+        { "metric": "Compliance Gaps Detected", "improvement": "+45%", "timeframe": "6 months" },
+        { "metric": "Audit Preparation Time", "improvement": "-65%", "timeframe": "6 months" },
+        { "metric": "Compliance Staff Efficiency", "improvement": "+2x", "timeframe": "6 months" }
+      ],
+      "deploymentPatterns": ["private_cloud", "hybrid_on_prem"],
+      "aiCapabilities": ["NLP Document Analysis", "Regulatory Classification", "Obligation Mapping", "Gap Analysis", "Report Generation"],
+      "riskFactors": [
+        { "risk": "Missed regulatory obligation", "severity": "critical", "mitigation": "Human review checkpoint for all mapped obligations" },
+        { "risk": "Incorrect interpretation of ambiguous regulation", "severity": "high", "mitigation": "Confidence scoring with escalation thresholds" },
+        { "risk": "Cross-jurisdiction conflicts", "severity": "medium", "mitigation": "Jurisdiction-aware processing pipeline" }
+      ],
+      "integrationRequirements": ["GRC Platform", "Policy Management", "Regulatory Feeds", "Audit Management"],
+      "typicalTimeline": { "pilot": 4, "rollout": 8, "scale": 16 },
+      "competitiveIntensity": "low",
+      "marketMaturity": "early"
+    },
+    "personal_financial_advisor_ai": {
+      "name": "Personal Financial Advisor AI",
+      "category": "wealth_management",
+      "description": "AI-driven personal finance assistant that provides customers with tailored financial insights, goal-based planning recommendations, and proactive spending optimization.",
+      "targetPersonas": ["head_of_cx", "chief_digital_officer"],
+      "problemStatements": [
+        "Financial advisory services limited to high-net-worth segment",
+        "Generic product recommendations drive low engagement",
+        "Customers lack actionable insights from transaction data",
+        "Advisor capacity bottleneck limits relationship coverage"
+      ],
+      "valueDrivers": [
+        { "metric": "Product Cross-sell Rate", "improvement": "+35%", "timeframe": "6 months" },
+        { "metric": "Customer Engagement", "improvement": "+50%", "timeframe": "3 months" },
+        { "metric": "Assets Under Management", "improvement": "+12%", "timeframe": "12 months" },
+        { "metric": "Advisory Coverage Ratio", "improvement": "+5x", "timeframe": "6 months" }
+      ],
+      "deploymentPatterns": ["cloud_hosted", "hybrid_on_prem"],
+      "aiCapabilities": ["Transaction Analysis", "Goal Modeling", "Recommendation Engine", "Natural Language Interface", "Portfolio Optimization"],
+      "riskFactors": [
+        { "risk": "Unsuitable investment recommendations", "severity": "critical", "mitigation": "Suitability framework and regulatory guardrails" },
+        { "risk": "Over-reliance on AI without human oversight", "severity": "high", "mitigation": "Tiered escalation based on advice complexity" },
+        { "risk": "Privacy concerns with spending analysis", "severity": "medium", "mitigation": "Explicit consent and data minimization" }
+      ],
+      "integrationRequirements": ["Core Banking", "Wealth Platform", "Market Data", "Mobile Banking App"],
+      "typicalTimeline": { "pilot": 4, "rollout": 8, "scale": 14 },
+      "competitiveIntensity": "high",
+      "marketMaturity": "growth"
+    },
+    "transaction_insights_ai": {
+      "name": "Transaction Insights AI",
+      "category": "data_analytics",
+      "description": "Real-time transaction intelligence platform that enriches, categorizes, and analyzes payment flows to surface business insights, detect anomalies, and enable predictive analytics.",
+      "targetPersonas": ["chief_digital_officer", "head_of_cx"],
+      "problemStatements": [
+        "Raw transaction data provides no actionable business context",
+        "Merchant categorization accuracy below 70%",
+        "Revenue leakage from undetected billing anomalies",
+        "Limited real-time visibility into payment flow health"
+      ],
+      "valueDrivers": [
+        { "metric": "Categorization Accuracy", "improvement": "+95%", "timeframe": "3 months" },
+        { "metric": "Revenue Leakage Detection", "improvement": "+$2M/yr", "timeframe": "6 months" },
+        { "metric": "Real-time Anomaly Detection", "improvement": "< 30 sec", "timeframe": "3 months" },
+        { "metric": "Data Product Revenue", "improvement": "New stream", "timeframe": "12 months" }
+      ],
+      "deploymentPatterns": ["cloud_hosted", "hybrid_on_prem"],
+      "aiCapabilities": ["Transaction Enrichment", "Merchant Classification", "Anomaly Detection", "Predictive Analytics", "Stream Processing"],
+      "riskFactors": [
+        { "risk": "Data quality degradation at scale", "severity": "medium", "mitigation": "Automated data quality monitoring" },
+        { "risk": "Latency spikes in real-time processing", "severity": "medium", "mitigation": "Adaptive batch fallback with SLA monitoring" },
+        { "risk": "Third-party data dependency", "severity": "low", "mitigation": "Multi-provider enrichment strategy" }
+      ],
+      "integrationRequirements": ["Payment Gateway", "Core Banking", "Data Warehouse", "Business Intelligence"],
+      "typicalTimeline": { "pilot": 3, "rollout": 6, "scale": 12 },
+      "competitiveIntensity": "medium",
+      "marketMaturity": "growth"
+    }
+  },
+  "categories": {
+    "customer_experience": { "label": "Customer Experience", "color": "#3B82F6" },
+    "risk_management": { "label": "Risk Management", "color": "#EF4444" },
+    "lending": { "label": "Lending", "color": "#F59E0B" },
+    "compliance": { "label": "Compliance", "color": "#8B5CF6" },
+    "wealth_management": { "label": "Wealth Management", "color": "#10B981" },
+    "data_analytics": { "label": "Data & Analytics", "color": "#EC4899" }
+  }
+}
