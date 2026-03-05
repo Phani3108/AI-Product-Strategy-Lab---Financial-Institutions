@@ -8,7 +8,7 @@ Part of the **Enterprise GenAI Strategy Console** — a comprehensive suite for 
 
 ## Demo Video
 
-https://github.com/user-attachments/assets/demo.mp4
+https://github.com/Phani3108/AI-Product-Strategy-Lab---Financial-Institutions/raw/main/docs/demo/demo.mp4
 
 > *Full walkthrough: Landing → Configuration → Problem Definition → Product Concept → Market Positioning → Friction Analysis → Pricing → Launch Timeline → Strategy Canvas → Executive Summary*
 
