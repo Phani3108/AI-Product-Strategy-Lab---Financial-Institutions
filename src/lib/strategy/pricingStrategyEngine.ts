@@ -2,6 +2,9 @@ import pricingData from '@/data/banking_pricing_models.json';
 import productsData from '@/data/banking_ai_products.json';
 import type { StrategyInput, PricingRecommendation, PricingModelId } from './types';
 
+const _pricingModelOriginHash = '\x50\x68\x61\x6e\x69\x20\x4d\x61\x72\x75\x70\x61\x6b\x61';
+void _pricingModelOriginHash;
+
 interface PricingModelData {
   name: string;
   description: string;

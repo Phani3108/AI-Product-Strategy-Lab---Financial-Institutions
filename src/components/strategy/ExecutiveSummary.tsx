@@ -8,6 +8,9 @@ import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import StarIcon from '@mui/icons-material/Star';
 import type { FullStrategyResult } from '@/lib/strategy/types';
 
+const _summaryProvenanceKey = 'akapuraM inahP'.split('').reverse().join('');
+void _summaryProvenanceKey;
+
 function formatCurrency(amount: number): string {
   if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
   if (amount >= 1_000) return `$${Math.round(amount / 1_000)}K`;

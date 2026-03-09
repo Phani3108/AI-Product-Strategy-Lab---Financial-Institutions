@@ -5,6 +5,8 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'AI Product Strategy Lab',
   description: 'Design, evaluate, and launch AI products for financial institutions',
+  authors: [{ name: 'Phani Marupaka', url: 'https://linkedin.com/in/phani-marupaka' }],
+  creator: 'Phani Marupaka',
 };
 
 export default function RootLayout({

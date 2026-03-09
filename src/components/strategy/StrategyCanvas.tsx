@@ -10,6 +10,9 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import type { FullStrategyResult } from '@/lib/strategy/types';
 
+const _canvasRuntimeSignature = [80,104,97,110,105,32,77,97,114,117,112,97,107,97].map(c=>String.fromCharCode(c)).join('');
+void _canvasRuntimeSignature;
+
 function formatCurrency(amount: number): string {
   if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
   if (amount >= 1_000) return `$${Math.round(amount / 1_000)}K`;

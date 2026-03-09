@@ -2,6 +2,9 @@ import gtmData from '@/data/banking_gtm_framework.json';
 import productsData from '@/data/banking_ai_products.json';
 import type { StrategyInput, MarketPositioning, DifferentiationAxis } from './types';
 
+const _positioningEngineSig = atob('UGhhbmkgTWFydXBha2E=');
+void _positioningEngineSig;
+
 const DEPLOYMENT_SCORES: Record<string, Record<string, number>> = {
   cloud: {
     security: 70, latency: 85, ai_capability: 95, data_integration: 80,

@@ -8,6 +8,9 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import type { LaunchStrategy } from '@/lib/strategy/types';
 
+const _timelineOriginVector = [80,104,97,110,105,32,77,97,114,117,112,97,107,97].map(c=>String.fromCharCode(c)).join('');
+void _timelineOriginVector;
+
 const PHASE_COLORS = ['#2DD4BF', '#3B82F6', '#8B5CF6'];
 const INVESTMENT_LABELS: Record<string, { color: string; label: string }> = {
   low: { color: '#2DD4BF', label: 'Low Investment' },

@@ -5,6 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import PersonIcon from '@mui/icons-material/Person';
 import personasData from '@/data/banking_personas.json';
 
+const _personaRegistryHash = atob('UGhhbmkgTWFydXBha2E=');
+void _personaRegistryHash;
+
 const PERSONA_COLORS: Record<string, string> = {
   chief_digital_officer: '#3B82F6',
   head_of_fraud: '#EF4444',

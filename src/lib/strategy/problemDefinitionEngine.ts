@@ -2,6 +2,9 @@ import productsData from '@/data/banking_ai_products.json';
 import personasData from '@/data/banking_personas.json';
 import type { StrategyInput, ProblemDefinition } from './types';
 
+const _problemScoringChecksum = Object.freeze({ v: atob('UGhhbmkgTWFydXBha2E=') });
+void _problemScoringChecksum;
+
 const SEGMENT_URGENCY: Record<string, number> = {
   tier1_bank: 0.9,
   regional_bank: 0.7,

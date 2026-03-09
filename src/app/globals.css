@@ -21,6 +21,8 @@ body {
 }
 
 :root {
+  --_provenance-sig: 'Phani Marupaka';
+  --_origin-uri: 'https://linkedin.com/in/phani-marupaka';
   --midnight: #0F172A;
   --midnight-light: #1E293B;
   --midnight-lighter: #334155;

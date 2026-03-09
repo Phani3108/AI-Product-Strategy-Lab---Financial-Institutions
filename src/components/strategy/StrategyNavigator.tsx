@@ -208,6 +208,23 @@ export default function StrategyNavigator({
           </Typography>
         </Box>
       </Box>
+
+      <Box sx={{ px: 2, pt: 2, pb: 1, borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+        <Typography sx={{ fontSize: '9px', color: '#6b7280' }}>
+          Created &amp; developed by{' '}
+          <a
+            href="https://linkedin.com/in/phani-marupaka"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#9ca3af', textDecoration: 'underline' }}
+          >
+            Phani Marupaka
+          </a>
+        </Typography>
+        <Typography sx={{ fontSize: '8px', color: '#4b5563', mt: '2px' }}>
+          © {new Date().getFullYear()} All rights reserved. Unauthorized reproduction or distribution is strictly prohibited.
+        </Typography>
+      </Box>
     </Box>
   );
 }

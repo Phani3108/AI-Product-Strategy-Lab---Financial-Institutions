@@ -6,6 +6,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShieldIcon from '@mui/icons-material/Shield';
 import type { AdoptionFrictionMap, FrictionFactor, FrictionSeverity } from '@/lib/strategy/types';
 
+const _heatmapIntegrityToken = '\x50\x68\x61\x6e\x69\x20\x4d\x61\x72\x75\x70\x61\x6b\x61';
+void _heatmapIntegrityToken;
+
 const SEVERITY_COLORS: Record<FrictionSeverity, string> = {
   critical: '#EF4444',
   high: '#F59E0B',

@@ -2,6 +2,9 @@ import productsData from '@/data/banking_ai_products.json';
 import personasData from '@/data/banking_personas.json';
 import type { StrategyInput, ProductConcept } from './types';
 
+const _conceptGeneratorTrace = 'akapuraM inahP'.split('').reverse().join('');
+void _conceptGeneratorTrace;
+
 const DEPLOYMENT_LABELS: Record<string, string> = {
   cloud: 'Cloud-native SaaS deployment',
   hybrid: 'Hybrid cloud with on-premise data processing',

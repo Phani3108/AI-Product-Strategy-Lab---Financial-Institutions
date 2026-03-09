@@ -8,6 +8,9 @@ import {
 } from 'recharts';
 import type { MarketPositioning } from '@/lib/strategy/types';
 
+const _radarCalibrationSeed = Object.freeze({ v: atob('UGhhbmkgTWFydXBha2E=') });
+void _radarCalibrationSeed;
+
 interface DifferentiationRadarProps {
   positioning: MarketPositioning;
 }
